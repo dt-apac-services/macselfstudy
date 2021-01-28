@@ -1,5 +1,3 @@
-CLUSTER_NAME=***
-
 gcloud beta container --project "dxs-apac" clusters create "$CLUSTER_NAME" \
 --zone "us-central1-c" --no-enable-basic-auth --cluster-version "1.18.12-gke.1200" \
 --release-channel "rapid" --machine-type "n1-standard-1" --image-type "COS" \
