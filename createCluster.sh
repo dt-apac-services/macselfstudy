@@ -6,4 +6,4 @@ gcloud beta container --project "$GCP_PROJECT" clusters create "$CLUSTER_NAME" \
 --num-nodes "1" --no-enable-stackdriver-kubernetes --enable-ip-alias --network "projects/$GCP_PROJECT/global/networks/default" \
 --subnetwork "projects/$GCP_PROJECT/regions/us-central1/subnetworks/default" --default-max-pods-per-node "110" \
 --no-enable-master-authorized-networks --addons HorizontalPodAutoscaling,HttpLoadBalancing --enable-autoupgrade \
---enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0 --enable-shielded-nodes --node-labels Owner=$USERNAME
+--enable-autorepair --max-surge-upgrade 1 --max-unavailable-upgrade 0 --enable-shielded-nodes --node-labels owner=$USERNAME
